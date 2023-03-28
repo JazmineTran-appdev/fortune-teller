@@ -20,4 +20,15 @@ class EightController < ApplicationController
 
     render({ :template => "eight_view/two_eight.html.erb"})
   end
+
+  def three_eight
+    @dice = Array.new
+
+    3.times do
+      roll = rand(1..8)
+      @dice.push(roll)
+    end
+
+    render({ :template => "eight_view/three_eight.html.erb"})
+  end
 end
