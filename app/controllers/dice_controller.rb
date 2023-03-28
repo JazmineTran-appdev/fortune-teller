@@ -35,4 +35,16 @@ class DiceController < ApplicationController
 
     render({ :template => "dice_view/three_six.html.erb" })
   end
+
+  def four_six
+    @dice = Array.new
+
+    4.times do
+      roll = rand(1..6)
+
+      @dice.push(roll)
+    end
+
+    render({ :template => "dice_view/four_six.html.erb" })
+  end
 end
