@@ -50,7 +50,7 @@ Rails.application.routes.draw do
   get("/roll/2/6", { :controller => "dice", :action => "two_six" })
   get("/roll/3/6", { :controller => "dice", :action => "three_six" })
   get("/roll/4/6", { :controller => "dice", :action => "four_six" })
-  # /roll/5/6
+  get("/roll/5/6", { :controller => "dice", :action => "five_six" })
   # /roll/6/6
 
   # /roll/1/4
