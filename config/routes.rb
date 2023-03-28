@@ -47,7 +47,7 @@ Rails.application.routes.draw do
   #  - Write the Ruby to make it dynamic, and work properly.
 
   get("/roll/1/6", { :controller => "dice", :action => "one_six" })
-  # /roll/2/6
+  get("/roll/2/6", { :controller => "dice", :action => "two_six" })
   # /roll/3/6
   # /roll/4/6
   # /roll/5/6
