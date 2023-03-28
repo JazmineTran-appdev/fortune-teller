@@ -1,4 +1,4 @@
-class DiceController < ApplicationController
+class SixController < ApplicationController
   
   def one_six
     @dice = Array.new
@@ -9,7 +9,7 @@ class DiceController < ApplicationController
       @dice.push(roll)
     end
 
-    render({ :template => "dice_view/one_six.html.erb" })
+    render({ :template => "six_view/one_six.html.erb" })
   end
 
   def two_six
@@ -21,7 +21,7 @@ class DiceController < ApplicationController
       @dice.push(roll)
     end
 
-    render({ :template => "dice_view/two_six.html.erb" })
+    render({ :template => "six_view/two_six.html.erb" })
   end
 
   def three_six
@@ -33,7 +33,7 @@ class DiceController < ApplicationController
       @dice.push(roll)
     end
 
-    render({ :template => "dice_view/three_six.html.erb" })
+    render({ :template => "six_view/three_six.html.erb" })
   end
 
   def four_six
@@ -45,7 +45,7 @@ class DiceController < ApplicationController
       @dice.push(roll)
     end
 
-    render({ :template => "dice_view/four_six.html.erb" })
+    render({ :template => "six_view/four_six.html.erb" })
   end
 
   def five_six
@@ -57,7 +57,7 @@ class DiceController < ApplicationController
       @dice.push(roll)
     end
 
-    render({ :template => "dice_view/five_six.html.erb" })
+    render({ :template => "six_view/five_six.html.erb" })
   end
 
   def six_six
@@ -69,6 +69,6 @@ class DiceController < ApplicationController
       @dice.push(roll)
     end
 
-    render({ :template => "dice_view/six_six.html.erb" })
+    render({ :template => "six_view/six_six.html.erb" })
   end
 end
